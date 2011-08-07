@@ -12,8 +12,19 @@ TalkListActivity
 
 3) Added TestData
 
+4) Added views (main + adapter view) for list activity
 
-4) Added views
+5) Added adapter for talks
 
-5) Added adapter
 
+
+
+--------
+
+NEXT STEPS:
+
+6) Add talk activity 
+
+7) Add talk details view
+
+8) Added intent between list and talk view.
