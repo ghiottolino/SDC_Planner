@@ -1,1 +1,19 @@
-Beispiel Projekt fuer die SDC
+Beispiel Projekt fuer die SDCgit@github.com:ghiottolino/SDC_Planner.git
+
+
+STEPS:
+
+1) Create new Android Project, fill in all fields
+SDC Planner
+com.seitenbau.android.sdc.planner
+TalkListActivity
+
+2) Generated a few beans
+
+3) Added TestData
+
+
+4) Added views
+
+5) Added adapter
+
