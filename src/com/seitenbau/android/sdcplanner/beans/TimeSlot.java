@@ -1,8 +1,9 @@
 package com.seitenbau.android.sdcplanner.beans;
 
+import java.io.Serializable;
 import java.util.Calendar;
 
-public class TimeSlot {
+public class TimeSlot implements Serializable{
 	
 	private Calendar fromTime;
 	

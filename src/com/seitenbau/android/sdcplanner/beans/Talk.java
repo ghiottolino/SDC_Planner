@@ -1,6 +1,8 @@
 package com.seitenbau.android.sdcplanner.beans;
 
-public class Talk {
+import java.io.Serializable;
+
+public class Talk implements Serializable{
 	
 	private String title;
 	

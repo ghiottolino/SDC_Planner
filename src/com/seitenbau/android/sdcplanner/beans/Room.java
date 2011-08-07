@@ -1,6 +1,8 @@
 package com.seitenbau.android.sdcplanner.beans;
 
-public class Room {
+import java.io.Serializable;
+
+public class Room implements Serializable{
 	
 	private String name;
 

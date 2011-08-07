@@ -16,15 +16,10 @@ TalkListActivity
 
 5) Added adapter for talks
 
+6) Added talk activity 
 
+7) Added talk details view
 
+8) Defined new activity in the manifest
 
---------
-
-NEXT STEPS:
-
-6) Add talk activity 
-
-7) Add talk details view
-
-8) Added intent between list and talk view.
+9) Added intent between list and talk view.

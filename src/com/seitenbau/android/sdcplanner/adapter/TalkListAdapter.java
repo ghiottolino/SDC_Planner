@@ -9,7 +9,6 @@ import com.seitenbau.android.sdcplanner.beans.Talk;
 import android.content.Context;
 
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
@@ -20,11 +19,6 @@ public class TalkListAdapter extends ArrayAdapter<Talk>{
 	List<Talk> talks;
 	
 	Context context;
-	
-	OnClickListener likeOnClickListener;
-	
-	OnClickListener dislikeOnClickListener;
-	
 	
 	public TalkListAdapter(Context context, int resource,
 			int textViewResourceId, List<Talk> objects) {
