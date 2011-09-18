@@ -4,20 +4,29 @@
 	android:layout_height="fill_parent" android:background="#ffffffff">
 
 	<TextView android:id="@+id/talkdetail_title_text"
-		android:layout_height="wrap_content" android:layout_width="fill_parent" android:textStyle="bold"
-		android:textSize="18sp" android:textColor="#ff000000" android:paddingBottom="10sp"/>
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:textStyle="bold" android:textSize="18sp" android:textColor="#ff000000"
+		android:paddingBottom="10sp" />
 
 	<TextView android:id="@+id/talkdetail_speaker_text"
 		android:layout_height="wrap_content" android:layout_width="fill_parent"
-		android:textSize="14sp" android:textColor="#99000000" android:paddingBottom="10sp"/>
+		android:textSize="14sp" android:textColor="#99000000"
+		android:paddingBottom="10sp" />
 
 	<TextView android:id="@+id/talkdetail_subtitle_text"
 		android:layout_height="wrap_content" android:layout_width="fill_parent"
-		android:textSize="14sp" android:textColor="#99000000" android:paddingBottom="10sp"/>
+		android:textSize="14sp" android:textColor="#99000000"
+		android:paddingBottom="10sp" />
 
-	<TextView android:id="@+id/talkdetail_abstract_text"
-		android:layout_height="wrap_content" android:layout_width="fill_parent"
-		android:textSize="14sp" android:textColor="#ff000000" android:paddingBottom="10sp"/>
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:id="@+id/talkdetail_abstract_text"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:textSize="14sp" android:textColor="#ff000000"
+			android:paddingBottom="10sp" />
+	</ScrollView>
+
+
 
 
 </LinearLayout>
