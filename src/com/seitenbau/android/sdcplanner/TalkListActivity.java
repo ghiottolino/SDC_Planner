@@ -28,7 +28,7 @@ public class TalkListActivity extends Activity {
         mListView = (ListView) findViewById(R.id.talklist_list);
 
         final List<Talk> talks = TestData.getAllTalks();
-        TalkListAdapter talkListAdapter = new TalkListAdapter(this, R.layout.talklist_item,  R.id.talklist_item_text, talks);
+        TalkListAdapter talkListAdapter = new TalkListAdapter(this, R.layout.talklist_item,  R.id.talklist_item_title, talks);
         mListView.setAdapter(talkListAdapter);
         // clicking on a talk
         

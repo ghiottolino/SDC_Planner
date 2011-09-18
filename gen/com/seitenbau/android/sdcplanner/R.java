@@ -14,11 +14,16 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int talkdetail_speaker_text=0x7f060001;
-        public static final int talkdetail_title_text=0x7f060000;
-        public static final int talklist_item_text=0x7f060004;
-        public static final int talklist_list=0x7f060003;
-        public static final int talklist_text=0x7f060002;
+        public static final int talkdetail_abstract_text=0x7f050003;
+        public static final int talkdetail_speaker_text=0x7f050001;
+        public static final int talkdetail_subtitle_text=0x7f050002;
+        public static final int talkdetail_title_text=0x7f050000;
+        public static final int talklist_item_layout=0x7f050006;
+        public static final int talklist_item_speaker=0x7f050008;
+        public static final int talklist_item_subtitle=0x7f050009;
+        public static final int talklist_item_title=0x7f050007;
+        public static final int talklist_list=0x7f050005;
+        public static final int talklist_text=0x7f050004;
     }
     public static final class layout {
         public static final int main=0x7f030000;
@@ -27,11 +32,8 @@ public final class R {
         public static final int talklist_item=0x7f030003;
     }
     public static final class string {
-        public static final int app_name=0x7f050001;
-        public static final int hello=0x7f050000;
-        public static final int talklist_text_label=0x7f050002;
-    }
-    public static final class xml {
-        public static final int sessions=0x7f040000;
+        public static final int app_name=0x7f040001;
+        public static final int hello=0x7f040000;
+        public static final int talklist_text_label=0x7f040002;
     }
 }

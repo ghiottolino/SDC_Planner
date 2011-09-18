@@ -2,6 +2,9 @@ package com.seitenbau.android.sdcplanner.beans;
 
 import java.io.Serializable;
 
+import android.content.Context;
+import android.text.format.DateUtils;
+
 public class Talk implements Serializable{
 	
 	private String title;
@@ -32,6 +35,18 @@ public class Talk implements Serializable{
 	public String getTitle() {
 		return title;
 	}
+	
+	 private static final int TIME_FLAGS = DateUtils.FORMAT_SHOW_TIME
+	            | DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_ABBREV_WEEKDAY;
+	
+	public String getSubtitle(Context c) {
+
+	    String subTitle= DateUtils.formatDateRange(c,
+	            this.getTimeSlot().getFromTime().getTimeInMillis(), this.getTimeSlot().getToTime().getTimeInMillis(), TIME_FLAGS);
+	    
+	    subTitle+=", in "+this.getRoom().getName();
+            return subTitle;
+    }
 
 	public void setTitle(String title) {
 		this.title = title;
