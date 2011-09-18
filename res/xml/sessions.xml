@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2011 Google Inc. Licensed under the Apache License, Version 
+	2.0 (the "License"); you may not use this file except in compliance with 
+	the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+<sessions>
+
+
+	<session>
+	  <id>html5boilerplate</id>  
+      <start>2011-09-23T13:30:00.000-07:00</start>
+         	<end>2011-09-23T14:30:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">21</column>
+		<speaker>Tobias Sailer</speaker>
+		<abstract>Best Practices rund um  HTML5 Performance.
+
+Das Project http://html5boilerplate.com
+ist eine Vorlage für schnelle und performante HTML5 Projekte.
+
+Eine Vorstellung und Walk Through ....
+
+Enthalten sind :
+
+* HTML5 Basics
+* CSS 3 Defaults
+* Server Configs
+* Build Skripte
+* Performance Optimierungen
+		</abstract>
+		<title>HTML5 Boilerplate Vorstellung</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">47</column>
+	</session>
+
+	<session>  
+	  <id>java7</id>  
+      <start>2011-09-23T13:30:00.000-07:00</start>
+         	<end>2011-09-23T14:30:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">19</column>
+		<speaker>Achim Bitzer</speaker>
+		<abstract>Java 7 steht (endlich!) vor der Tür und bringt eine Reihe kleiner aber praktischer Änderungen und Erweiterungen der Sprache mit sich. Welche Features sind das? Was verbirgt sich beispielsweise hinter Begriffen wie dem Diamond-Operator oder Exception Chaining? Dieser Talk ist ein Überblick über die neuen Sprach-Features.
+		</abstract>
+		<title>Java 7: Was gibt es Neues?</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">52</column>
+	</session>
+	
+	
+	<session> 
+		  <id>codehub</id>  
+      <start>2011-09-23T15:00:00.000-07:00</start>
+         	<end>2011-09-23T16:00:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">22</column>
+		<speaker>Jochen Hiller</speaker>
+		<abstract>Die Entwicklung von Software in großen Unternehmen geschieht häufig in einzelnen Entwicklungs-Bererichen (Silos), die nichts voneinander wissen. Eine gemeinsam Entwicklung oder auch nur der Austausch von Source Code, Schnittstellen, etc. scheitert oft an einem gemeinsamen Zugriff darauf, aber auch an fehlender Bereitschaft, Source Code und den Lebenszyklus (Bugs, Contributions) offenzulegen.
+
+Bei der Deutschen Telekom wurde im Rahmen von Aktivitäten rund um die Entwicklung von Mobilen Anwendungen beschlossen, eine gemeinsame Code Plattform als Pilot aufzusetzen. Diese Plattform (CodeHub) soll genau diese Defizite lösen, in dem es eine gemeinsame Infrastruktur für „Developer Collaboration“ bereitstellt. Diese besteht aus den Komponenten
+
+    Distributed Version Control (Git, Repo)
+    Peer-2-Peer Code Review (Gerrit)
+    Build-Infrastruktur (Maven, ANT)
+    Continuous Integration (Jenkins)
+    Portal-Protal für Suche nach Projekten (Eclipse Projekt Skalli)
+    Issues-Tracking (JIRA)
+    Wiki für Dokumentation (Confluence)
+
+Diese Plattform kann man sich vorstellen wie ein “SourceForge@Telekom”. Langfristig sollen auch externe Partner (Universitäten, Lieferanten) mit integriert werden.
+
+Anhand eines Beispiels wird live gezeigt, wie man einen Roundtrip von Code Änderung, Build, Contributions über Gerrit, Build von Branches zu einem neuen konsistenten Build kommt. Es werden nur ganz wenige einleitende Folien gezeigt.
+
+Zeitdauer: 30-50 min</abstract>
+		<title>CodeHub – Developer collaboration platform at Telekom</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">51</column>
+	</session>
+	
+	<session> 
+	  <id>mongodbeinführung</id>   
+      <start>2011-09-23T15:00:00.000-07:00</start>
+        <end>2011-09-23T16:00:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">27</column>
+		<speaker>Michael Wagner</speaker>
+		<abstract>Einführung in die dokumentorientierte Datenbank MongoDB.</abstract>
+		<title>Einführung in MongoDB</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">30</column>
+	</session>
+	
+	
+	<session>
+	  <id>123android</id>     
+      <start>2011-09-23T16:30:00.000-07:00</start>
+         	<end>2011-09-23T17:30:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">10</column>
+		<speaker>Sebastian Barthenheier und Nicola Tesser</speaker>
+		<abstract>Einführung in die Grundlagen der Android Programmierung. Was sind Activities und Intents. Wie verwendet man die verschiedenen UI Elemente, Layouts, Resourcen und Adapter. Wie können langsame Prozesse einfach im Hintergrund erledigt werden (Async Tasks). Wir werden auch eine kleine Android Applikation zusammen basteln!</abstract>
+		<title>123 Android Programmierung Grundlagen</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">58</column>
+	</session>
+	
+	<session>
+	  <id>phonegapsenchat.</id>     
+      <start>2011-09-23T16:30:00.000-07:00</start>
+         	<end>2011-09-23T17:30:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">2</column>
+		<speaker>Christian Dittrich</speaker>
+		<abstract>Was bietet die Möglichkeit Plattform-übergreifende Apps mit PhoneGap &amp; Sencha Touch in JavaScript zu entwickeln. 
+Wie funktioniert dieser Ansatz und wie praxistauglich ist er.</abstract>
+		<title>App-Entwicklung mit PhoneGap &amp; Sencha Touch</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">10</column>
+	</session>
+	
+	
+	<session>  
+		  <id>beyondagile</id>     
+      <start>2011-09-24T10:00:00.000-07:00</start>
+         	<end>2011-09-24T11:00:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">12</column>
+		<speaker>Christian Faigle, Alexander Birk, Christoph Lukas</speaker>
+		<abstract>Der Vortrag soll als eine Art Case Study den aktuellen Stand des Continuous Delivery Prozesses im DLSi Projekt zeigen. Dazu wollen wir:
+
+    kurz die Grundlagen von Continuous Integration und Continuous Delivery rekapitulieren
+    den Stand der CD Implementierung im DLSi Projekt zeigen
+    einen Blick auf Jenkins und das eigentliche Deployment werfen
+    offene Fragen diskutieren
+		</abstract>
+		<title>Beyond Agile - Introducing Continuous Delivery</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">43</column>
+	</session>
+	
+	<session>
+	  <id>couchdbcouchapp</id>     
+      <start>2011-09-24T10:00:00.000-07:00</start>
+         	<end>2011-09-24T11:00:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">11</column>
+		<speaker>Matt Bond (Bond IT GmbH)</speaker>
+		<abstract>Relax - Apache CouchDB is a document-oriented database that can be queried and indexed in a MapReduce fashion using JavaScript. CouchDB also offers incremental replication with bi-directional conflict detection and resolution. CouchDB provides a RESTful JSON API than can be accessed from any environment that allows HTTP requests. (1)
+
+CouchApps are JavaScript and HTML5 applications served directly from CouchDB. (2)
+
+For Herr Guttenberg fans:
+
+(1) : http://couchapp.org/page/index
+
+(2) : http://couchdb.apache.org/
+		</abstract>
+		<title>An Introduction to CouchDB and CouchApp</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">38</column>
+	</session>
+	
+	<session> 
+		 <id>wpo</id>     	
+      <start>2011-09-24T11:30:00.000-07:00</start>
+         	<end>2011-09-24T12:30:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">14</column>
+		<speaker>Jakob Schröter</speaker>
+		<abstract>Warum ist die Performance mit für den Erfolg von Webprojekten entscheidend? Welche Auswirkungen kann eine zusätzliche Sekunde Ladezeit in Bezug auf die Webseiten-Hits und den Umsatz haben? Und vor allem: wie können wir Entwickler die Performance deutlich verbessern? Und zwar ohne neue Hardware anzuschaffen.
+
+Eine Einführung in die Web Performance Optimierung:
+
+    Wie betrachtet ein Nutzer eine Webseite?
+    Wie kann man die Performance messen?
+    Welche Optimierungsmöglichkeiten gibt es?
+    Client-seitige Optimierungen
+    Server-seitige Optimierungen
+    Automatisierung der Optimierungen
+    Blick in die Zukunft (u.A.: Was Google hat, was wir nicht haben...)
+
+
+
+Ich kenne mich mit den Client-seitigen Optimierungen gut aus, Server-seitig eher weniger. Vielleicht hat noch jemand Lust ein wenig über die Server-seite zu erzählen?</abstract>
+		<title>Web Performance Optimierung (WPO)</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">6</column>
+	</session>
+	
+	<session> 
+			 <id>oauth2</id>     
+      <start>2011-09-24T11:30:00.000-07:00</start>
+         	<end>2011-09-24T12:30:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">9</column>
+		<speaker>Karl Martin Kern</speaker>
+		<abstract>Mit der zunehmenden Verbreitung mobiler Geräte haben sich auch die Anforderungen an Autorisierungsprotokolle geändert. Die neue OAuth-Spezifikation bietet dementsprechend neue Konzepte, die weit über die bisherigen Ansätze hinausgehen und auch einfacher zu nutzen sind.
+
+"The OAuth 2.0 authorization protocol enables a third-party application to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf." (http://tools.ietf.org/html/draft-ietf-oauth-v2-20)
+		</abstract>
+		<title>OAuth 2</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">41</column>
+	</session>
+	
+	
+	
+	
+	<session>  
+				 <id>einführunginscala</id>  
+      <start>2011-09-24T13:00:00.000-07:00</start>
+         	<end>2011-09-24T14:00:00.000-07:00</end>
+        <room>Big Room Floor 1</room>
+		<column name="id">4</column>
+		<speaker>Dennis Braunsdorf &amp; Christian Baranowski</speaker>
+		<abstract>Scala ist eine moderne Programmiersprache für die JVM und .NET VM. Die Sprache ist wie Java auch statisch typisiert und verfügt über eine ganze Reihe sehr spannender features wie beispielweise:
+
+    Objektorientierung 
+    Funktionale Sprache
+    Closures
+    Currying
+    Pattern Matching
+    Implicits
+    Typinferenz
+    Eigene Operatoren für Objekte definieren z.B. +
+    Nebenläufigkeit mit Aktoren
+    for comprehension und yield
+    Collection-Library
+    ...
+
+In Scala kann man sowohl imperativ wie funktional programmieren, man spricht daher von einer hybrid Sprache. Scala ist im Gegensatz zu Java eine rein objektorientierte Sprache. Jeder Wert ist ein Objekt. Scala lässt sich dennoch vollständig in Java integrieren. Diese bedeut man kann sowohl Klassen die in Scala geschrieben sind in einer Java Anwendung nutzen und natürlich können alle Java Klassen auch in einem Scala Programm verwendet werden.
+
+Der Vortrag führt in die Grundlagen und Feature der Sprache Scala ein und zeigt die unterschiede zu Java auf. Daher sind Erfahrung im Java Umfeld eine gute Voraussetzung aber nicht notwendig um dem Vortrag folgen zu können. Neben der Sprache Scala gibt der Vortrag einen Einblick in die Vorteile funktionaler Programmierung und soll einen ersten Eindruck vermitteln wie Scala genutzt werden kann um eigene DLSs elegant zu entwickeln.
+
+Links:
+
+    Scala Website - http://www.scala-lang.org/
+    Wikipedia - http://de.wikipedia.org/wiki/Scala_(Programmiersprache
+    Scala IDE - http://www.scala-ide.org/
+		</abstract>
+		<title>Einführung in Scala</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">4</column>
+	</session>
+	
+	<session>  
+	<id>seitenbaucms</id>
+      <start>2011-09-24T13:00:00.000-07:00</start>
+         	<end>2011-09-24T14:00:00.000-07:00</end>
+        <room>Small Room Floor 1</room>
+		<column name="id">15</column>
+		<speaker>Sebastian Roller</speaker>
+		<abstract>Wie funktioniert das CMS? Wofür eignet sich das CMS? Wie richtet man damit eine Website ein? Wie sieht die Architektur aus?</abstract>
+		<title>Präsentation des SEITENBAU CMS</title>
+		<column name="conference_id">1</column>
+		<column name="owner_id">50</column>
+	</session>
+	
+	
+</sessions>

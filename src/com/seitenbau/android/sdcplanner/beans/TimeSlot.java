@@ -2,12 +2,19 @@ package com.seitenbau.android.sdcplanner.beans;
 
 import java.io.Serializable;
 import java.util.Calendar;
+import java.util.Date;
 
 public class TimeSlot implements Serializable{
 	
-	private Calendar fromTime;
+	private Calendar fromTime = Calendar.getInstance();
 	
-	private Calendar toTime;
+	private Calendar toTime =Calendar.getInstance();
+	
+	public TimeSlot(long fromTime, long toTime) {
+            super();
+            this.fromTime.setTimeInMillis(fromTime);
+            this.toTime.setTimeInMillis(toTime);
+    }
 	
 	public TimeSlot(Calendar fromTime, Calendar toTime) {
 		super();

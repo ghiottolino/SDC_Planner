@@ -14,6 +14,11 @@ public class Talk implements Serializable{
 	
 	private Room room;
 	
+	public Talk()
+	{
+	    
+	}
+	
 	public Talk(String title, String description, String speaker,
 			TimeSlot timeSlot, Room room) {
 		super();
