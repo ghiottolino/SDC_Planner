@@ -10,18 +10,18 @@
 		android:textStyle="bold"
 		android:textSize="18sp"
 		android:textColor="#ff000000"
-		android:layout_weight="1" />
+		android:layout_weight="1" android:text="Title"/>
 
 	<TextView android:id="@+id/talklist_item_speaker" style="@android:style/TextAppearance.Large"
 		android:layout_height="wrap_content" android:layout_width="fill_parent"
 		android:textSize="14sp"
 		android:textColor="#99000000"
-		android:layout_weight="1" />
+		android:layout_weight="1" android:text="Speakers"/>
 
 	<TextView android:id="@+id/talklist_item_subtitle" style="@android:style/TextAppearance.Large"
 		android:layout_height="wrap_content" android:layout_width="fill_parent"
 		android:textSize="14sp"
 		android:textColor="#99000000"
-		android:layout_weight="1" />
+		android:layout_weight="1" android:text="Subtitle"/>
 		
 </LinearLayout>

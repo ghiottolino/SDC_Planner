@@ -9,7 +9,7 @@
             android:id="@+id/talklist_text"
             android:textColor="?android:textColorPrimary"
             android:textSize="17dp"
-            android:text="@string/talklist_text_label"
+            android:text="Talks:"
             android:background="@android:drawable/title_bar"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />

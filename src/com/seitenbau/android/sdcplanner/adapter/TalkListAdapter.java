@@ -24,7 +24,6 @@ public class TalkListAdapter extends ArrayAdapter<Talk> {
         super(context, resource, textViewResourceId, objects);
         this.talks = objects;
         this.context = context;
-
     }
 
     @Override
@@ -34,20 +33,14 @@ public class TalkListAdapter extends ArrayAdapter<Talk> {
         TextView title = (TextView) view.findViewById(R.id.talklist_item_title);
         TextView speaker = (TextView) view
                 .findViewById(R.id.talklist_item_speaker);
-        
         TextView subtitle = (TextView) view
                 .findViewById(R.id.talklist_item_subtitle);
 
         Talk talk = talks.get(position);
         title.setText(talk.getTitle());
-        speaker.setText(talk.getSpeaker());
-        subtitle.setText(talk.getSubtitle(context));
+        speaker.setText(talk.getSpeakers());
+        subtitle.setText(talk.getRoom());
         return view;
-    }
-
-    @Override
-    public boolean isEnabled(int position) {
-        return true;
     }
 
 }

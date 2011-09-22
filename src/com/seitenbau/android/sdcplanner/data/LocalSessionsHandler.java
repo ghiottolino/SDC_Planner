@@ -103,10 +103,9 @@ public class LocalSessionsHandler {
         }
         
         talk.setTitle(title);
-        talk.setRoom(new Room(roomId));
-        talk.setSpeaker(speakers);
-        talk.setDescription(sessionAbstract);
-        talk.setTimeSlot(new TimeSlot(startTime, endTime));
+        talk.setRoom(roomId);
+        talk.setSpeakers(speakers);
+        talk.setTeaser(sessionAbstract);
         talks.add(talk);
 
     }

@@ -1,38 +1,36 @@
 Beispiel Projekt fuer die SDCgit@github.com:ghiottolino/SDC_Planner.git
 
-
 STEPS:
 
 1) Create new Android Project, fill in all fields
-SDC Planner
-com.seitenbau.demo (com.seitenbau.android.sdc.planner)?
-SessionListActivity (TalkListActivity)
+Name: SDC Planner
+Package: com.seitenbau.android.sdc.planner
+Starting Activity: TalkListActivity
 
 2) Create new packages: 
-com.seitenbau.demo.data
-com.seitenbau.demo.beans
-com.seitenbau.demo.adapter
+com.seitenbau.android.sdc.planner.data
+com.seitenbau.android.sdc.planner.beans
+com.seitenbau.android.sdc.planner.adapter
 
-3) Generated the Session Bean
-*private String title;	
-*private String room;
-*private String speakers;
-*private Calendar fromTime;
-*private Calendar toTime;
-*private String teaser;
+3) Generated the Talk Bean
+*(private String) title;	
+*(private String) room;
+*(private String) speakers;
+*(private String) teaser;
 
 4) Copy the content of the data package from a copy of the project to the new created project
 The package contains the file sessions.xml, xml parsing class, a TestData static class with return the list of all Sessions.
 
-(Improve the layout formatting, add default text to the textfield)
+(it is not important to talk about this package, just stupid java stuffs)
 
-4) Copy views (main + talklist_item view) for list activity
 
-5) Create TalkListAdapter extends ArrayAdapter<Session>
+4) Copy views (talklist + talklist_item view) for list activity
+
+5) Let's have a look to the copied views (xml + editor)
+
+6) Create TalkListAdapter extends ArrayAdapter<Session>
 * Create constructor, pass the list
 * Override getView method
-
-6) Add method getSubtitle to Session bean
 
 7) Customize TalkActivity
 
@@ -44,30 +42,19 @@ The package contains the file sessions.xml, xml parsing class, a TestData static
 8) Show in emulator
 
 
-9) Copy layout "talk_details.xml". Possibly make some changes using the editor
+9) Copy layout "talk_details.xml".
+
+10) Let's have a look to "talk_details.xml" (xml + editor)
 
 10) Create a new TalkDetailActivity
 * set the layout
 * retrieves all text views
-* make Session = bull
+* make Session = null
 * write session fields in views
+Retorical question: how do we retrieve the session? Say the keyword "intent"
 
 11) Add onItemClickListener to ListActivity
 
 12) Add Intent and startActivity to onClick method
 
 13) Add Activity to Manifest
-
-
-
-
-
-
-
-
-
-7) Added talk details view
-
-8) Defined new activity in the manifest
-
-9) Added intent between list and talk view.

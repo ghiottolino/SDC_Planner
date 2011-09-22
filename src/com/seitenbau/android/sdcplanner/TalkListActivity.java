@@ -38,7 +38,7 @@ public class TalkListActivity extends Activity {
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
 					long arg3) {
 				
-		    	Intent talkActivity = new Intent(getBaseContext(),TalkActivity.class);
+		    	Intent talkActivity = new Intent(getBaseContext(),TalkDetailActivity.class);
 		    	Talk talk = talks.get(arg2);
 		        talkActivity.putExtra("talk", talk);
 		    	startActivityForResult(talkActivity, 0);

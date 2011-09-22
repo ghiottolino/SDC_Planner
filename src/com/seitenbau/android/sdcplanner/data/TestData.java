@@ -57,8 +57,8 @@ public class TestData {
             throw new RuntimeException(e);
         }
         try {
-            sessions = new LocalSessionsHandler2().parse(parser, null);
             talks = new LocalSessionsHandler().parse(parser, null);
+            sessions = new LocalSessionsHandler2().parse(parser, null);
                
         } catch (XmlPullParserException e) {
             throw new RuntimeException(e);
