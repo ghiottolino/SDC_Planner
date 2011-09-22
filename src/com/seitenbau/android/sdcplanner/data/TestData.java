@@ -9,7 +9,6 @@ import java.util.List;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import com.seitenbau.android.sdcplanner.beans.Session;
 import com.seitenbau.android.sdcplanner.beans.Talk;
 
 
@@ -18,8 +17,6 @@ public class TestData {
     private static boolean initialized = false;
 
     private static List<Talk> talks = new ArrayList<Talk>();
-
-    private static List<Session> sessions = new ArrayList<Session>();
 
     
     public static List<Talk> getAllTalks() {
@@ -32,15 +29,7 @@ public class TestData {
         return talks;
     }
 
-    public static List<Session> getAllSessions() {
-
-        if (!initialized) {
-
-            initializeTalks();
-        }
-
-        return sessions;
-    }
+  
     
     private static void initializeTalks()
     {
@@ -58,7 +47,6 @@ public class TestData {
         }
         try {
             talks = new LocalSessionsHandler().parse(parser, null);
-            sessions = new LocalSessionsHandler2().parse(parser, null);
                
         } catch (XmlPullParserException e) {
             throw new RuntimeException(e);

@@ -16,9 +16,7 @@
 
 package com.seitenbau.android.sdcplanner.data;
 
-import com.seitenbau.android.sdcplanner.beans.Room;
 import com.seitenbau.android.sdcplanner.beans.Talk;
-import com.seitenbau.android.sdcplanner.beans.TimeSlot;
 import com.seitenbau.android.sdcplanner.data.ParserUtils;
 
 import org.xmlpull.v1.XmlPullParser;
