@@ -4,57 +4,140 @@ STEPS:
 
 1) Create new Android Project, fill in all fields
 Name: SDC Planner
-Package: com.seitenbau.android.sdc.planner
+Package: com.seitenbau.android.sdcplanner
 Starting Activity: TalkListActivity
 
-2) Create new packages: 
-com.seitenbau.android.sdc.planner.data
-com.seitenbau.android.sdc.planner.beans
-com.seitenbau.android.sdc.planner.adapter
+2) Create new packages:
+com.seitenbau.android.sdcplanner.data
+com.seitenbau.android.sdcplanner.beans
+com.seitenbau.android.sdcplanner.adapter
 
-3) Generated the Talk Bean
-*(private String) title;	
+3) Generated the Talk  Bean/POJO Object
+*(private String) title;    
 *(private String) room;
 *(private String) speakers;
 *(private String) teaser;
 
 4) Copy the content of the data package from a copy of the project to the new created project
-The package contains the file sessions.xml, xml parsing class, a TestData static class with return the list of all Sessions.
-
+The package contains the file sessions.xml, xml parsing class, a TestData static class with return the list of all Talks.
 (it is not important to talk about this package, just stupid java stuffs)
 
-
-4) Copy views (talklist + talklist_item view) for list activity
+4) Copy views (talklist + talklist_item view) for TalkListActivity
 
 5) Let's have a look to the copied views (xml + editor)
 
-6) Create TalkListAdapter extends ArrayAdapter<Session>
-* Create constructor, pass the list
-* Override getView method
 
-7) Customize TalkActivity
 
-* set layout
-* fetch listview
-* fetch sessions
-* add adapter to listview
+
+
+
+
+
+
+
+
+
+6) Create TalkListAdapter extends ArrayAdapter<Talk>
+ * Create constructor, pass the list of Talks
+ [tladapter_Constructor]
+
+ * Override getView method
+ [tladapter_GetView]
+
+ *retrieve the Views with the id of the resources
+ [tladapter_RetrieveViews]
+
+ *retrieve the Talk from the Talklist, given the position
+  [selber machen]
+
+ *write the content of the talk objects in the Views
+ [tladapter_WriteViews]
+
+
+7) Customize TalkListActivity
+
+ * set layout
+[selber machen]
+
+ * retrieve the  listview
+ [tlactivity_RetrieveListView]
+
+ * retrieve the talks from our xml TestData parser...
+ [tlactivity_GetAllTalks]
+
+ * add adapter to listview
+ [tlactivity_CallAdapter]
 
 8) Show in emulator
-
 
 9) Copy layout "talk_details.xml".
 
 10) Let's have a look to "talk_details.xml" (xml + editor)
 
+
+
+
+
+
+
 10) Create a new TalkDetailActivity
-* set the layout
-* retrieves all text views
-* make Session = null
-* write session fields in views
+   
+   * override onCreate
+   [tdactivity_OnCreate]
+   
+   * retrieves all text views
+   [tdactivity_RetrieveViews]
+
+   * make Talk = null
+    [selber machen]
+   
+   * write talks fields in views
+   [tdactivity_WriteViews]    
+   
 Retorical question: how do we retrieve the session? Say the keyword "intent"
 
-11) Add onItemClickListener to ListActivity
+11) Add onItemClickListener to ListActivity, and add the Intent
 
-12) Add Intent and startActivity to onClick method
+   * Add listener    
+   [tlactivity_AddOnItemClickListener]
 
-13) Add Activity to Manifest
+   * Retrieved the clicked Talk
+   [selber machen]
+
+   *  call the TalkDetailsActivity with the new Talk with an Intent
+   [tlactivity_CallTalkDetailsActivity]
+
+
+12) Make Talk serializable
+
+13) Retrieve the Talk from the Intent in the TalkDetailsActivity
+
+   *retrieve the intent and the talk
+   [tdactivity_RetrieveTalksFromIntent]
+
+14) Add TalkDetailsActivity to Manifest
+
+
+
+
+
+
+TEMPLATES:
+
+[tdactivity_OnCreate]
+[tdactivity_RetrieveTalksFromIntent]
+[tdactivity_RetrieveViews]
+[tdactivity_WriteViews]
+
+[tlactivity_AddOnItemClickListener]
+[tlactivity_CallAdapter]
+[tlactivity_CallTalkDetailsActivity]
+[tlactivity_GetAllTalks]
+[tlactivity_RetrieveListView]
+
+[tladapter_Constructor]
+[tladapter_GetView]
+[tladapter_RetrieveViews]
+[tladapter_WriteViews]
+
+

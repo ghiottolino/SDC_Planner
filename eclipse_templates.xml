@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tdactivity_OnCreate">	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.talk_details);
+
+
+		// retrieve Views
+
+
+
+		// retrieve Talk
+
+	
+
+		// Write talk attributes in Views
+
+
+
+	}</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tdactivity_RetrieveTalkFromIntent">		Intent intent = getIntent();
+		Talk talk = null;
+		try {
+			talk = (Talk) intent.getSerializableExtra("talk");
+		} catch (Exception e) {
+			throw new RuntimeException(e);
+		}</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tdactivity_RetrieveViews">		TextView titleTextView = (TextView) findViewById(R.id.talkdetail_title_text);
+		TextView speakerTextView = (TextView) findViewById(R.id.talkdetail_speaker_text);
+		TextView subtitleTextView = (TextView) findViewById(R.id.talkdetail_subtitle_text);
+		TextView abstractTextView = (TextView) findViewById(R.id.talkdetail_abstract_text);</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tdactivity_WriteViews">		titleTextView.setText(talk.getTitle());
+		speakerTextView.setText(talk.getSpeakers());
+		subtitleTextView.setText(talk.getRoom());
+		abstractTextView.setText(talk.getTeaser());</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tlactivity_AddOnItemClickListener"> listView.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView&lt;?&gt; arg0, View arg1, int position,
+					long arg3) {
+					
+					// retrieve the clicked Talk
+
+
+					// call the TalkDetailsActivity with the new Talk
+				
+				
+			}
+		});</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tlactivity_CallAdapter">        TalkListAdapter talkListAdapter = new TalkListAdapter(this, R.layout.talklist_item,  R.id.talklist_item_title, talks);
+        listView.setAdapter(talkListAdapter);</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tlactivity_CallTalkDetailsActivity">  				Intent talkActivity = new Intent(getBaseContext(),TalkDetailsActivity.class);
+		    	talkActivity.putExtra("talk", talk);
+		    	startActivityForResult(talkActivity, 0);
+							</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tlactivity_GetAllTalks">final List&lt;Talk&gt; talks = TestData.getAllTalks();</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tlactivity_RetrieveListView">        ListView listView = (ListView) findViewById(R.id.talklist_list);
+</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tladapter_Costructor">     List&lt;Talk&gt; talks;
+
+    Context context;
+
+    public TalkListAdapter(Context context, int resource,
+            int textViewResourceId, List&lt;Talk&gt; objects) {
+        super(context, resource, textViewResourceId, objects);
+        this.talks = objects;
+        this.context = context;
+    }</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tladapter_Getview"> @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        View view = super.getView(position, convertView, parent);
+		// retrieve the Views with the id of the resources
+   
+		// retrieve the Talk from the Talklist, given the position
+
+		// write the content of the talk objects in the Views
+
+        return view;
+    }</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tladapter_RetriveViews">		TextView title = (TextView) view.findViewById(R.id.talklist_item_title);
+        TextView speaker = (TextView) view
+                .findViewById(R.id.talklist_item_speaker);
+        TextView subtitle = (TextView) view
+                .findViewById(R.id.talklist_item_subtitle);</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="tladapter_WriteViews">        title.setText(talk.getTitle());
+        speaker.setText(talk.getSpeakers());
+        subtitle.setText(talk.getRoom());</template></templates>
